@@ -4,7 +4,7 @@ import NavBar from '../components/NavBar'
 
 const DashboardLayout = () => {
   return (
-    <div className="flex h-screen">
+    <div className="flex-col h-screen">
       <NavBar />
 
       <main className="p-4 overflow-y-auto">
