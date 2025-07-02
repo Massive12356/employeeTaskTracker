@@ -22,6 +22,8 @@ A simple and user-friendly task tracking system for managing employee task recor
 - Tailwind CSS
 - React Router
 - JSON Server (for mock backend)
+- Axios
+- Framer Motion
 
 ---
 
