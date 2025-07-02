@@ -1,0 +1,74 @@
+{
+  "entries": [
+    {
+      "id": "2",
+      "employeeName": "Jane Smith",
+      "date": "2025-07-02",
+      "taskDescription": "API design meeting edited",
+      "status": "In Progress"
+    },
+    {
+      "id": "0aaa",
+      "employeeName": "Christiana Mintah",
+      "date": "2025-07-15",
+      "taskDescription": "testing 2",
+      "status": "In Progress"
+    },
+    {
+      "id": "94a8",
+      "employeeName": "Edward Mintah",
+      "date": "2025-07-24",
+      "taskDescription": "Implemented login authentication using JWT and bcrypt.",
+      "status": "In Progress"
+    },
+    {
+      "id": "7144",
+      "employeeName": "sarah Johnson",
+      "date": "2025-07-13",
+      "taskDescription": "Reviewed pull requests and updated documentation for new API endpoints.",
+      "status": "Needs Review"
+    },
+    {
+      "id": "97ec",
+      "employeeName": "Michael Smith",
+      "date": "2025-07-31",
+      "taskDescription": "Worked on dashboard UI using Tailwind CSS and Framer Motion.",
+      "status": "In Progress"
+    },
+    {
+      "id": "491c",
+      "employeeName": "Emily Davis",
+      "date": "2025-07-20",
+      "taskDescription": "Debugged and fixed issues with the cart functionality on mobile.",
+      "status": "In Progress"
+    },
+    {
+      "id": "f219",
+      "employeeName": "Jessica Brown",
+      "date": "2025-07-25",
+      "taskDescription": "Tested user registration and added validation for email uniqueness.",
+      "status": "Blocked"
+    },
+    {
+      "id": "ed05",
+      "employeeName": "Chris Taylor",
+      "date": "2025-08-09",
+      "taskDescription": "Designed responsive product detail layout with dynamic image previews",
+      "status": "Completed"
+    },
+    {
+      "id": "a321",
+      "employeeName": "Olivia Martinez",
+      "date": "2025-07-25",
+      "taskDescription": "Connected frontend product filters to backend query parameters",
+      "status": "In Progress"
+    },
+    {
+      "id": "f54f",
+      "employeeName": "James Anderson",
+      "date": "2025-07-05",
+      "taskDescription": "Set up Zustand for global product and cart state management",
+      "status": "Blocked"
+    }
+  ]
+}

@@ -3,13 +3,15 @@ import React, { useEffect, useState } from "react";
 import { FiSearch } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLocation } from "react-router-dom";
+import { useSearch } from "../context/SearchContext";
 
 export default function NavBar() {
   const [currentTime, setCurrentTime] = useState("");
   const [mobileSearchOpen, setMobileSearchOpen] = useState(false);
-  const location = useLocation();
+  const {setQuery} = useSearch();
+  const [local, setLocal] = useState('');
 
-  /* ---------- clock updater ---------- */
+  //clock 
   useEffect(() => {
     const updateClock = () => {
       const now = new Date();
@@ -28,12 +30,20 @@ export default function NavBar() {
     return () => clearInterval(id);
   }, []);
 
-  /* ---------- search bar JSX ---------- */
+  const handleSearch = (e)=>{
+    const value = e.target.value;
+    setLocal(value);
+    setQuery(value);
+  }
+
+  //search bar
   const SearchBar = (
     <div className="flex items-center bg-[#EAE8E8] px-3 py-1 rounded-md w-full md:w-80">
       <FiSearch className="text-[#283144] text-lg mr-2" />
       <input
         type="text"
+        value={local}
+        onChange={handleSearch}
         placeholder="Search by Staff Name or Status"
         className="bg-transparent text-[#283144] w-full placeholder-gray-600 focus:outline-none text-sm sm:text-base"
       />
