@@ -135,12 +135,12 @@ export default function EmployeeForm() {
         </div>
 
         {/* Buttons */}
-        <div className="flex justify-end gap-4 mt-6">
+        <div className="flex  flex-col-reverse md:flex-row justify-end gap-4 mt-6">
           <Link to="/">
             <motion.button
               whileTap={{ scale: 0.95 }}
               type="button"
-              className="flex items-center gap-2 bg-red-300 text-[#9d0505] px-7 py-2 rounded-lg font-semibold"
+              className="flex items-center gap-2 bg-red-300 text-[#9d0505] py-2 px-20 md:px-7 md:py-2 rounded-lg font-semibold"
             >
               <FiX size={18} />
               Cancel
@@ -151,7 +151,7 @@ export default function EmployeeForm() {
             whileTap={{ scale: 0.95 }}
             type="submit"
             disabled={loading}
-            className={`flex items-center gap-2 bg-blue-800 hover:bg-blue-900 text-white px-7 py-2 rounded-lg font-semibold ${
+            className={`flex items-center gap-2 bg-blue-800 hover:bg-blue-900 text-white py-2 px-15 md:px-7 md:py-2 rounded-lg font-semibold ${
               loading ? "opacity-70 cursor-not-allowed" : ""
             }`}
           >

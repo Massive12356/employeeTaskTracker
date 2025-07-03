@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "2",
-      "employeeName": "Jane Smith",
-      "date": "2025-07-02",
-      "taskDescription": "API design meeting edited",
-      "status": "In Progress"
-    },
-    {
-      "id": "0aaa",
-      "employeeName": "Christiana Mintah",
-      "date": "2025-07-15",
-      "taskDescription": "testing 2",
-      "status": "In Progress"
-    },
-    {
       "id": "94a8",
       "employeeName": "Edward Mintah",
       "date": "2025-07-24",

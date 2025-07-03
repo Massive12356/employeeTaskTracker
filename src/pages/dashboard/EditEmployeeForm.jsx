@@ -72,7 +72,6 @@ export default function EditEmployeeForm() {
       transition={{ type: "spring", stiffness: 100, damping: 25 }}
       className="p-5 md:p-10 bg-[#F9F7F7] min-h-screen font-[play]"
     >
-    
       <Link to="/">
         <motion.div
           whileTap={{ scale: 0.9 }}
@@ -85,7 +84,6 @@ export default function EditEmployeeForm() {
         </motion.div>
       </Link>
 
-    
       <div className="flex items-center gap-3 mb-8">
         <MdPostAdd size={30} className="text-blue-500" />
         <h1 className="text-2xl md:text-3xl font-bold text-blue-900">
@@ -93,12 +91,10 @@ export default function EditEmployeeForm() {
         </h1>
       </div>
 
-    
       <form
         onSubmit={handleSubmit}
         className="bg-white shadow-md rounded-xl p-6 space-y-6"
       >
-      
         <div>
           <label className="block text-[#777186] font-semibold mb-1">
             Full Name
@@ -113,7 +109,6 @@ export default function EditEmployeeForm() {
           />
         </div>
 
-      
         <div>
           <label className="block text-[#777186] font-semibold mb-1">
             Date of Entry
@@ -163,12 +158,12 @@ export default function EditEmployeeForm() {
         </div>
 
         {/* Buttons */}
-        <div className="flex justify-end gap-4 mt-6">
+        <div className="flex flex-col-reverse md:flex-row justify-end gap-4 mt-6">
           <Link to="/">
             <motion.button
               whileTap={{ scale: 0.95 }}
               type="button"
-              className="flex items-center gap-2 bg-red-300 text-[#9d0505] px-7 py-2 rounded-lg font-semibold"
+              className="flex items-center gap-2 bg-red-300 text-[#9d0505] py-2 px-20 md:px-7 md:py-2 rounded-lg font-semibold"
             >
               <FiX size={18} />
               Cancel
