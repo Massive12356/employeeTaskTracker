@@ -20,7 +20,7 @@ export default function EmployeeList() {
   const [showModal, setShowModal] = useState(false);
   const [selectedEntry, setSelectedEntry] = useState(null);
 
-  const { query,setQuery } = useSearch(); // text typed in NavBar
+  const { query, setQuery } = useSearch(); // text typed in NavBar
 
   /* fetch on mount */
   useEffect(() => {
@@ -72,7 +72,7 @@ export default function EmployeeList() {
   const reloadData = () => {
     setFilterField("All");
     setLoading(true);
-    setQuery('');
+    setQuery("");
     setError(null);
     fetchEntries()
       .then(setEntries)
@@ -86,7 +86,7 @@ export default function EmployeeList() {
         Employee Task Records
       </h1>
       <p className="text-[12px] md:text-[17px] text-gray-700 mb-4 font-[play]">
-        You can EDIT and DELETE Task here
+        You can ADD, EDIT and DELETE Task here
       </p>
 
       {/* header */}
@@ -113,10 +113,10 @@ export default function EmployeeList() {
         <Link to="/form">
           <motion.button
             whileTap={{ scale: 0.95 }}
-            className="bg-blue-800 hover:bg-blue-700 text-sm text-white md:text-[16px] px-4 py-2 rounded-lg font-[play] flex gap-2 cursor-pointer"
+            className="bg-blue-800 hover:bg-blue-700 text-sm text-white md:text-[16px] px-4 py-2 rounded-lg font-[play] font-bold flex gap-2 cursor-pointer"
           >
             <AiOutlinePlus size={18} />
-            Add Task
+            Record Task
           </motion.button>
         </Link>
       </div>
@@ -226,8 +226,10 @@ export default function EmployeeList() {
             </h3>
             <p className="text-sm text-gray-500 mb-4">
               Are you sure you want to delete{" "}
-              <span className="font-bold text-black">{selectedEntry.employeeName}</span>’s
-              task?
+              <span className="font-bold text-black">
+                {selectedEntry.employeeName}
+              </span>
+              ’s task?
             </p>
             <div className="flex justify-end gap-4">
               <motion.button
